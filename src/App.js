@@ -3,7 +3,7 @@ import List from "./components/List"
 
 function App() {
   return (
-    <div className="bg-gray-800 min-h-screen h-10">
+    <div className="bg-[#0f171e] min-h-screen h-10">
       <Header />
       <List />
     </div>
