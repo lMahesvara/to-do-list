@@ -1,12 +1,6 @@
 import React from "react"
 import { ImCheckboxChecked } from "react-icons/im"
-const ListItemChecked = ({
-  task,
-  setIsFinished,
-  isFinished,
-  handleTask,
-  index,
-}) => {
+const ListItemChecked = ({ task, handleTask, index }) => {
   return (
     <>
       <p className="overflow-x-auto scrollbar-hide w-4/5 line-through text-gray-400">

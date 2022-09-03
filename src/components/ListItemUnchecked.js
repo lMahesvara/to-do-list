@@ -1,12 +1,6 @@
 import React from "react"
 import { ImCheckboxUnchecked } from "react-icons/im"
-const ListItemUnchecked = ({
-  task,
-  setIsFinished,
-  isFinished,
-  handleTask,
-  index,
-}) => {
+const ListItemUnchecked = ({ task, handleTask, index }) => {
   return (
     <>
       <p className="overflow-x-auto scrollbar-hide w-4/5 ">{task.task}</p>
