@@ -3,19 +3,23 @@ import { AiFillDelete } from "react-icons/ai"
 import ListItemChecked from "./ListItemChecked"
 import ListItemUnchecked from "./ListItemUnchecked"
 
-const ListItem = ({ task, index, handleDelete }) => {
+const ListItem = ({ task, index, handleDelete, handleTask }) => {
   const [isFinished, setIsFinished] = useState(false)
   return (
     <article className="relative w-full bg-gray-800/50 rounded-md px-3 py-2 mb-4 text-white flex items-center ease-in-out">
-      {isFinished ? (
+      {task.isFinished ? (
         <ListItemChecked
           task={task}
+          index={index}
+          handleTask={handleTask}
           setIsFinished={setIsFinished}
           isFinished={isFinished}
         />
       ) : (
         <ListItemUnchecked
           task={task}
+          index={index}
+          handleTask={handleTask}
           setIsFinished={setIsFinished}
           isFinished={isFinished}
         />
